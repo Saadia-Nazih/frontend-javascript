@@ -1,3 +1,5 @@
+/// <reference path="./subjects/Teacher.ts" />
+/// <reference path="./subjects/Subject.ts" />
 /// <reference path="./subjects/Cpp.ts" />
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
@@ -12,16 +14,19 @@ export const cTeacher: Subjects.Teacher = {
   experienceTeachingC: 10,
 };
 
+// Per Cpp
 console.log('C++');
 cpp.setTeacher(cTeacher);
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
+// Per Java
 console.log('Java');
 java.setTeacher(cTeacher);
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
+// Per React
 console.log('React');
 react.setTeacher(cTeacher);
 console.log(react.getRequirements());
